@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTMLcovert</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }	
+    /* Div Align Box's */
+.divBoxAlign {
+    background: #F4F6F6;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+
+		padding: 25px;
+		margin-bottom: 20px;
+		 opacity: 0.85; 
+		filter: alpha(opacity=85); /* For IE8 and earlier */
+	
+		/* This will 
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+	
+}
+.divBoxAlign:hover {
+		border-color: blue;
+		background-color: #FEF5E7;
+		opacity: 1; 
+		filter: alpha(opacity=100); /* For IE8 and earlier */
+		
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.10); /* Safari and Chrome */
+    -moz-transform:scale(1.10); /* Firefox */
+    -ms-transform:scale(1.10); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.10); /* Opera */
+    transform:translatZ(0) scale(1.10);
+}
+.full {
+    background: url('./wall.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+ </style>
+ 
+</head>
+<body class='full'>
+
+  <!-- Modal -->
+  <div class="modal fade" id="addUsers" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Find and add someone</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+		
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Search for a user</label>
+              <input type="text" class="form-control" id="usrname" placeholder="e.g. Mark">
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Search</button>
+			  <div id="UserReport"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">HTMLcovert</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <ul class="nav navbar-nav navbar-right">
+       <li><a href="https://KramWell.com"><span class="glyphicon glyphicon-globe"></span> KramWell.com</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+
+  
+    <div class="col-md-8 col-md-offset-2">
+		<h2>RIG 1</h2>
+		<br>
+	</div>	
+	
+    <div class="col-md-8 col-md-offset-2">
+	<div class="divBoxAlign">
+        <p style='font-size:large;'><span class='text-uppercase'>Rig1</span></p>
+	<!--	<p><button type="button" class="btn btn-success" data-toggle="modal" data-target="#addUsers">Add users</button></p> -->	
+	
+	 <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td><span class="glyphicon glyphicon-fire"></span>&nbsp;&nbsp;Cores Currently Mining</td>
+        <td class="text-right">0</td>
+      </tr>
+      <tr>
+        <td><span class="glyphicon glyphicon-scale"></span>&nbsp;&nbsp;Total Processor Count</td>
+        <td class="text-right">0</td>
+      </tr>
+      <tr>
+        <td><span class="glyphicon glyphicon-indent-left"></span>&nbsp;&nbsp;Block Height</td>
+        <td class="text-right">0</td>
+      </tr>
+      <tr>
+        <td><span class="glyphicon glyphicon-piggy-bank"></span>&nbsp;&nbsp;Total Balance</td>
+        <td class="text-right">0</td>
+      </tr>
+      <tr>
+        <td><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Immature Balance</td>
+        <td class="text-right">0</td>
+      </tr>	  
+      <tr>
+        <td><span class="glyphicon glyphicon-education"></span>&nbsp;&nbsp;Proof of Work</td>
+        <td class="text-right">0</td>
+      </tr>	  
+      <tr>
+        <td><span class="glyphicon glyphicon-cloud-upload"></span>&nbsp;&nbsp;Network Connections</td>
+        <td class="text-right">0</td>
+      </tr>	
+      <tr>
+        <td><span class="glyphicon glyphicon-dashboard"></span>&nbsp;&nbsp;CPU Load</td>
+        <td class="text-right">0</td>
+      </tr>		  
+      <tr>
+        <td><span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;Mining Since</td>
+        <td class="text-right">0</td>		
+      </tr>	  
+      <tr>
+        <td><span class="glyphicon glyphicon-equalizer"></span>&nbsp;&nbsp;Mined Blocks</td>
+        <td class="text-right">0</td>		
+      </tr>		  
+    </tbody>
+	</table>	
+		
+		
+	</div>
+	</div>
+		
+	</div>
+	</div>
+	
+  </div>
+</div>
+
+
+</body>
+</html>
